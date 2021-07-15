@@ -1,0 +1,130 @@
+/* Flexbox */
+
+.violet {
+    background-color: rgb(146, 105, 146);
+    border: 3px solid purple;
+}
+
+.red {
+    background-color: rgb(243, 156, 156);
+    border: 3px solid red;
+}
+
+.blue {
+    background-color: rgb(144, 144, 241);
+    border: 3px solid blue;
+}
+
+.green {
+    background-color: rgb(151, 238, 151);
+    border: 3px solid green;
+}
+
+.orange {
+    background-color: rgb(252, 209, 129);
+    border: 3px solid orange;
+}
+
+
+/* Dividing flex items onto flex lines */
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    justify-content: flex-start;
+    width: 150px;
+    height: 100px;
+}
+
+
+/* Calculations for flex-grow */
+
+.flex-parent2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    width: 100px;
+    height: 50px;
+}
+
+.one {
+    flex-grow: 1;
+    width: 10px;
+    border: none;
+    /* simplify calculations */
+}
+
+.two {
+    flex-grow: 2;
+    width: 20px;
+    border: none;
+}
+
+
+/* Calculations for flex-shrink */
+
+.flex-parent3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100px;
+    height: 50px;
+}
+
+.one2 {
+    flex-shrink: 1;
+    width: 100px;
+    border: none;
+    /* simplify calculations */
+}
+
+.two2 {
+    flex-shrink: 2;
+    width: 100px;
+    border: none;
+}
+
+
+/* THe Order Property */
+
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.child-one {
+    order: 3;
+}
+
+.child-two {
+    order: 2;
+}
+
+.child-three {
+    order: 1;
+}
+
+
+/* basic examples of using flexbox and look into a couple of interesting interactions between flexbox and other properties. */
+
+
+/* Centering with flexbox */
+
+
+/* Centering with flexbox is easy: just use a single-line flex container with justify-content and align-items: */
+
+html,
+body {
+    height: 100%;
+}
+
+.parent2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
